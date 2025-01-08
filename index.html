@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belén Abigaíl Carranza Robles - Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Belén Abigaíl Carranza Robles, diseñadora gráfica.">
+  <meta name="keywords" content="Diseño gráfico, Portafolio, Belén Abigaíl Carranza Robles, Proyectos, Testimonios, Contacto">
+  <meta name="author" content="Belén Abigaíl Carranza Robles">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://belabyrobles.com.com/">
+  <meta property="og:title" content="Belén Abigaíl Carranza Robles - Portafolio">
+  <meta property="og:description" content="Portafolio profesional de Belén Abigaíl Carranza Robles, diseñadora gráfica.">
+  <meta property="og:image" content="https://belabyrobles.com.com/img/cv.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://belabyrobles.com.com/">
+  <meta property="twitter:title" content="Belén Abigaíl Carranza Robles - Portafolio">
+  <meta property="twitter:description" content="Portafolio profesional de Belén Abigaíl Carranza Robles, diseñadora gráfica.">
+  <meta property="twitter:image" content="https://belabyrobles.com.com/img/cv.jpg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- AOS for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- Lightbox2 for image galleries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+<!-- Swiper for the carousel -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Isotope for filtering -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.css">
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 50;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal.active {
+      display: flex;
+    }
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 90%;
+    }
+    .carousel img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .slide-in {
+      animation: slideIn 1s ease-in-out;
+    }
+    @keyframes slideIn {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(0); }
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-pink-100">
+  <nav class="fixed bottom-0 w-full bg-white shadow-lg p-4 flex justify-around z-10">
+    <a href="#inicio" class="text-gray-700 hover:text-gray-900"><i class="fas fa-home"></i> Inicio</a>
+    <a href="#sobre-mi" class="text-gray-700 hover:text-gray-900"><i class="fas fa-user"></i> Sobre Mí</a>
+    <a href="#certificados" class="text-gray-700 hover:text-gray-900"><i class="fas fa-certificate"></i> Certificados</a>
+    <a href="#proyectos" class="text-gray-700 hover:text-gray-900"><i class="fas fa-briefcase"></i> Proyectos</a>
+    <a href="#testimonios" class="text-gray-700 hover:text-gray-900"><i class="fas fa-comments"></i> Testimonios</a>
+    <a href="#contacto" class="text-gray-700 hover:text-gray-900"><i class="fas fa-envelope"></i> Contacto</a>
+  </nav>
+
+  <section id="inicio" class="min-h-screen flex flex-col items-center justify-center fade-in">
+    <img src="img/cv.jpg" alt="Belén Abigaíl Carranza Robles" class="w-48 h-48 rounded-full mx-auto mb-6 shadow-lg" data-aos="zoom-in">
+    <h1 class="text-4xl text-gray-800">Belén Abigaíl Carranza Robles</h1>
+    <h1 class="text-xl text-gray-800" style="text-align: center; padding: 30px;">Soy egresada de la carrera de Ingeniería en Sistemas y Redes Informáticas por la Universidad Gerardo Barrios. Con 21 años, poseo conocimientos sólidos en modelado de bases de datos, diseño y normalización, optimización de consultas SQL, administración de bases de datos relacionales como MySQL y PostgreSQL, así como manejo de bases de datos NoSQL como MongoDB, MariaDB. Me destaco por mi capacidad de análisis, organización, responsabilidad y compromiso, buscando siempre implementar soluciones eficientes y escalables para la gestión de datos.</h1>
+    <a href="#contacto" class="mt-6 inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-3 px-6 rounded-full hover:shadow-xl transition duration-300 transform hover:-translate-y-1" data-aos="zoom-in-up">
+      <i class="fas fa-download"></i> Contacto
+    </a>
+  </section>
+
+  <section id="sobre-mi" class="min-h-screen flex flex-col items-center justify-center bg-pink-50 py-12">
+    <div class="text-center w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
+      <h2 class="text-4xl text-gray-800 mb-4" data-aos="fade-up">Sobre Mí</h2>
+      <img src="img/cv.jpg" alt="Belén Abigaíl Carranza Robles" class="w-48 h-48 rounded-full mx-auto mb-6 shadow-lg" data-aos="zoom-in">
+      <p class="text-lg text-gray-700 mb-6" data-aos="fade-up">Soy capaz de integrarme a un equipo de trabajo en el área de la informática, 
+        asi mismo aportando mis conocimientos y habilidades adquiridas a lo largo de mi carrera de Ingeniería
+        en Sistemas y Redes Informáticas.</p>
+        <br>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div data-aos="fade-right">
+                <h3 class="text-2xl text-gray-800 mb-2"><i class="fas fa-laptop-code"></i> Habilidades Duras</h3>
+                <ul class="list-disc list-inside text-left text-gray-700">
+                    <li>MySQL</li>
+                    <li>Blender</li>
+                    <li>MariaDB</li>
+                    <li>Photoshop</li>
+                    <li>Diseño UX/UI</li>
+                </ul>
+            </div>
+            <div data-aos="fade-left">
+                <h3 class="text-2xl text-gray-800 mb-2"><i class="fas fa-users"></i> Habilidades Blandas</h3>
+                <ul class="list-disc list-inside text-left text-gray-700">
+                    <li>Creatividad</li>
+                    <li>Comunicación</li>
+                    <li>Responsabilidad</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Resolución de problemas</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+      <div class="mt-6 w-full" data-aos="fade-up">
+        <h3 class="text-2xl text-gray-800 mb-4"><i class="fas fa-tools"></i> Herramientas</h3>
+        <div class="mb-4">
+          <label class="block text-gray-700">Offimatica</label>
+          <div class="relative pt-1">
+            <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
+              <div style="width:90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Blender</label>
+          <div class="relative pt-1">
+            <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
+              <div style="width:90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">MongoDB</label>
+          <div class="relative pt-1">
+            <div class="overflow-hidden h-2 text-xs flex rounded bg-blue-200">
+                <div style="width:75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-yellow-500"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Canvas</label>
+          <div class="relative pt-1">
+            <div class="overflow-hidden h-2 text-xs flex rounded bg-blue-200">
+              <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">MariaDB</label>
+          <div class="relative pt-1">
+            <div class="overflow-hidden h-2 text-xs flex rounded bg-green-200">
+              <div style="width:85%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="docs/Belén Robles - CV.pdf" target="_blank" class="mt-6 inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-3 px-6 rounded-full hover:shadow-xl transition duration-300 transform hover:-translate-y-1" data-aos="zoom-in-up">
+        <i class="fas fa-download"></i> Descargar CV
+      </a>
+    </div>
+  </section>
+  
+
+  <section id="certificados" class="min-h-screen flex items-center justify-center fade-in">
+    <div class="text-center" style="margin: 50px;">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Mis Certificados</h2>
+      <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="img/certificado1.jpg" alt="Certificado 1" class="w-full h-auto">
+        <img src="img/certificado2.jpg" alt="Certificado 2" class="w-full h-auto">
+        <img src="img/certificado3.jpg" alt="Certificado 3" class="w-full h-auto">
+        <img src="img/certificado4.png" alt="Certificado 4" class="w-full h-auto">
+        <img src="img/certificado5.png" alt="Certificado 5" class="w-full h-auto">
+        <img src="img/certificado6.png" alt="Certificado 6" class="w-full h-auto">
+        <img src="img/certificado7.png" alt="Certificado 7" class="w-full h-auto">
+        <img src="img/certificado8.jpg" alt="Certificado 8" class="w-full h-auto">
+        <img src="img/certificado9.jpg" alt="Certificado 9" class="w-full h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section id="proyectos" class="min-h-screen bg-pink-50 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Mis Proyectos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Proyecto 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/voto-1.png" alt="Proyecto 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Voto nación:</h3>
+            <p class="text-gray-600 mt-2">La app voto nación está hecha para un conteo de votos en tiempo real, además integra un servicio de chat en tiempo real de forma general, también cuenta con el uso de graficas para causar una mejor experiencia al usuario.</p>
+            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="openModal('modal-proyecto1')">Ver más</button>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/medica1.png" alt="Proyecto 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Clínica médica:</h3>
+            <p class="text-gray-600 mt-2">La aplicación es de una clínica médica, esta aplicación es para el área de la salud, ya que esta aplicación cuenta con una serie de opción como: recetas médicas, inventario, citas, diversos registros, registros especiales, para que el usuario pueda relacionarse con ellas para que se le haga más fácil el trabajo.</p>
+            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="openModal('modal-proyecto2')">Ver más</button>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/casa.jpg" alt="Proyecto 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Casa de nieve en 3D:</h3>
+            <p class="text-gray-600 mt-2">Consiste en modelar una casa en 3D haciendo uso del programa de Blender, donde vamos aplicar varios materias (arboles, nieve, luces, colores, etc).</p>
+            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="openModal('modal-proyecto3')">Ver más</button>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/carro1.jpeg" alt="Proyecto 4" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Robocar:</h3>
+            <p class="text-gray-600 mt-2">Competencia de carritos, consiste en una carrera de carritos, realizado en la UGB.</p>
+            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="openModal('modal-proyecto4')">Ver más</button>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/baile.png" alt="Proyecto 5" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Pista de baile en 3D:</h3>
+            <p class="text-gray-600 mt-2">Consiste en animar un personaje en 3D haciendo uso del programa de blender, y de una web que proporciona personajes y animaciones.</p>
+            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="openModal('modal-proyecto5')">Ver más</button>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/travel1.jpeg" alt="Proyecto 5" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Travel Accident:</h3>
+            <p class="text-gray-600 mt-2">Es una aplicacion web, esta aplicación es para el área de transito, ya que está diseñada para el control de accidentes de transito en El Salvador.</p>
+            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="openModal('modal-proyecto6')">Ver más</button>
+          </div>
+        </div>
+        <!-- Proyecto 7 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/accesorios-1.png" alt="Proyecto 5" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Iris accesorios:</h3>
+            <p class="text-gray-600 mt-2">La plataforma en línea permite a los usuarios visualizar y comprar productos de manera eficiente y segura. El sitio web fue diseñado con una interfaz intuitiva y accesible, facilitando la navegación y mejorando la experiencia de usuario.</p>
+            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="openModal('modal-proyecto7')">Ver más</button>
+          </div>
+        </div>
+        <!-- Más proyectos... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales de proyectos -->
+
+  <!-- Proyecto 1 -->
+  <div id="modal-proyecto1" class="modal" onclick="closeModal(event, 'modal-proyecto1')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 class="text-2xl font-bold mb-4">Voto nación:</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/voto-1.png" alt="Proyecto 1 Imagen 1"></div>
+          <div class="swiper-slide"><img src="img/voto-2.png" alt="Proyecto 1 Imagen 2"></div>
+          <div class="swiper-slide"><img src="img/voto-3.png" alt="Proyecto 1 Imagen 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <p class="mt-4"> <strong>Descripción:</strong> La app voto nación está hecha para un conteo de votos en tiempo real, además integra un servicio de chat en tiempo real de forma general, también cuenta con el uso de graficas para causar una mejor experiencia al usuario.</p>
+      <p class="mt-4"> <strong>Rol:</strong> Gestora de documentos.</p>
+      <p class="mt-4"> <strong>Lenguajes utilizados:</strong> Java.</p>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="closeModal(null, 'modal-proyecto1')">Cerrar</button>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="window.open('https://github.com/CarlosMartinz/Programacion-II', '_blank');">Ir a GitHub</button>
+    </div>
+  </div>
+
+  <!-- Proyecto 2 -->
+  <div id="modal-proyecto2" class="modal" onclick="closeModal(event, 'modal-proyecto2')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 class="text-2xl font-bold mb-4">Clínica médica:</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/medica1.png" alt="Proyecto 2 Imagen 1"></div>
+          <div class="swiper-slide"><img src="img/medica2.png" alt="Proyecto 2 Imagen 2"></div>
+          <div class="swiper-slide"><img src="img/medica3.png" alt="Proyecto 2 Imagen 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <p class="mt-4"><strong>Descripción:</strong> La aplicación es de una clínica médica, esta aplicación es para el área de la salud, ya que esta aplicación cuenta con una serie de opción como: recetas médicas, inventario, citas, diversos registros, registros especiales, para que el usuario pueda relacionarse con ellas para que se le haga más fácil el trabajo.</p>
+      <p class="mt-4"> <strong>Rol:</strong> Gestora de documentos.</p>
+      <p class="mt-4"> <strong>Lenguajes utilizados:</strong> Java.</p>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="closeModal(null, 'modal-proyecto2')">Cerrar</button>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="window.open('https://github.com/Usis011620/Progra_III/tree/Proyecto_final_clinica', '_blank');">Ir a GitHub</button>
+    </div>
+  </div>
+
+  <!-- Proyecto 3 -->
+  <div id="modal-proyecto3" class="modal" onclick="closeModal(event, 'modal-proyecto3')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 class="text-2xl font-bold mb-4">Casa de nieve en 3D:</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/casa.jpg" alt="Proyecto 3 Imagen 1"></div>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Descripción:</strong> Consiste en modelar una casa en 3D haciendo uso del programa de Blender, donde vamos aplicar varios materias (arboles, nieve, luces, colores, etc).</p>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="closeModal(null, 'modal-proyecto3')">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Proyecto 4 -->
+  <div id="modal-proyecto4" class="modal" onclick="closeModal(event, 'modal-proyecto4')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 class="text-2xl font-bold mb-4">Robocar:</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/carro1.jpeg" alt="Proyecto 4 Imagen 1"></div>
+          <div class="swiper-slide"><img src="img/carro2.jpeg" alt="Proyecto 4 Imagen 2"></div>
+          <div class="swiper-slide"><img src="img/carro3.jpeg" alt="Proyecto 4 Imagen 3"></div>
+          <div class="swiper-slide"><img src="img/carro4.jpeg" alt="Proyecto 4 Imagen 4"></div>
+          <div class="swiper-slide"><img src="img/carro5.jpeg" alt="Proyecto 4 Imagen 5"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <p class="mt-4"><strong>Descripción:</strong> Competencia de carritos, consiste en una carrera de carritos, realizado en la UGB.</p>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="closeModal(null, 'modal-proyecto4')">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Proyecto 5 -->
+  <div id="modal-proyecto5" class="modal" onclick="closeModal(event, 'modal-proyecto5')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 class="text-2xl font-bold mb-4">Pista de baile en 3D:</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/baile.png" alt="Proyecto 5 Imagen 1"></div>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Descripción:</strong> Consiste en animar un personaje en 3D haciendo uso del programa de blender, y de una web que proporciona personajes y animaciones.</p>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="closeModal(null, 'modal-proyecto5')">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Proyecto 6 -->
+  <div id="modal-proyecto6" class="modal" onclick="closeModal(event, 'modal-proyecto6')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 class="text-2xl font-bold mb-4">Travel Accident:</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/travel1.jpeg" alt="Proyecto 6 Imagen 1"></div>
+          <div class="swiper-slide"><img src="img/travel2.jpeg" alt="Proyecto 6 Imagen 2"></div>
+          <div class="swiper-slide"><img src="img/travel3.jpeg" alt="Proyecto 6 Imagen 3"></div>
+          <div class="swiper-slide"><img src="img/travel4.jpeg" alt="Proyecto 6 Imagen 4"></div>
+          <div class="swiper-slide"><img src="img/travel5.jpeg" alt="Proyecto 6 Imagen 5"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <p class="mt-4"><strong>Descripción:</strong> Es una aplicacion web, esta aplicación es para el área de transito, ya que está diseñada para el control de accidentes de transito en El Salvador.</p>
+      <p class="mt-4"> <strong>Rol:</strong> Gestora de documentos.</p>
+      <p class="mt-4"> <strong>Lenguajes utilizados:</strong> JavaScript, PHP, CSS.</p>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="closeModal(null, 'modal-proyecto6')">Cerrar</button>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="window.open('https://github.com/CarlosMartinz/TravelAccidentt', '_blank');">Ir a GitHub</button>
+    </div>
+  </div>
+
+  <!-- Proyecto 7 -->
+  <div id="modal-proyecto7" class="modal" onclick="closeModal(event, 'modal-proyecto7')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 class="text-2xl font-bold mb-4">Iris accesorios:</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/accesorios-1.png" alt="Proyecto 7 Imagen 1"></div>
+          <div class="swiper-slide"><img src="img/accesorios-2.png" alt="Proyecto 7 Imagen 2"></div>
+          <div class="swiper-slide"><img src="img/accesorios-3.png" alt="Proyecto 7 Imagen 3"></div>
+          <div class="swiper-slide"><img src="img/accesorios-4.png" alt="Proyecto 7 Imagen 4"></div>
+          <div class="swiper-slide"><img src="img/accesorios-5.png" alt="Proyecto 7 Imagen 5"></div>
+          <div class="swiper-slide"><img src="img/accesorios-6.png" alt="Proyecto 7 Imagen 6"></div>
+          <div class="swiper-slide"><img src="img/accesorios-7.png" alt="Proyecto 7 Imagen 7"></div>
+          <div class="swiper-slide"><img src="img/accesorios-8.png" alt="Proyecto 7 Imagen 8"></div>
+          <div class="swiper-slide"><img src="img/accesorios-9.png" alt="Proyecto 7 Imagen 9"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <p class="mt-4"><strong>Descripción:</strong> La plataforma en línea permite a los usuarios visualizar y comprar productos de manera eficiente y segura. El sitio web fue diseñado con una interfaz intuitiva y accesible, facilitando la navegación y mejorando la experiencia de usuario.</p>
+      <p class="mt-4"> <strong>Rol:</strong> Gestora de documentos.</p>
+      <p class="mt-4"> <strong>Lenguajes utilizados:</strong> HTML, CSS, JavaScript y PHP.</p>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="closeModal(null, 'modal-proyecto7')">Cerrar</button>
+      <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-blue-600" onclick="window.open('https://github.com/USIS051620/Negocios-electronicos', '_blank');">Ir a GitHub</button>
+    </div>
+  </div>
+
+  <!-- Sección de testimonios -->
+  <section id="testimonios" class="bg-pink-100 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Testimonios</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Testimonio 1 -->
+          <div class="swiper-slide bg-white shadow-lg rounded-lg p-14" style="text-align: center;">
+            <a href="docs/Alcir.pdf" target="_blank">
+              <img src="img/testimonioAlcir.jpg" alt="" width="300" height="200" style="display: block; margin-left: auto; margin-right: auto;">
+            </a>
+            <p class="text-gray-600 italic">"Es una excelente persona, con gran carisma y habilidades sociales; su forma de
+              pensar estratégica la hace muy apta para desarrollar cualquier tarea."</p>
+            <h4 class="text-gray-800 font-semibold mt-4">- Lic. Alcir Gusstavo Quintanilla Rodríguez.</h4>
+          </div> 
+
+          <!-- Testimonio 2 -->
+          <div class="swiper-slide bg-white shadow-lg rounded-lg p-14" style="text-align: center;">
+            <a href="docs/Cordero.pdf" target="_blank">
+              <img src="img/testimonioCordero.jpg" alt="" width="300" height="200" style="display: block; margin-left: auto; margin-right: auto;">
+            </a>
+            <p class="text-gray-600 italic">"Como persona Belén es una persona de muy buena conducta, honradez intachable, 
+              responsable en todos sus actos, respetuosa con las personas."</p>
+            <h4 class="text-gray-800 font-semibold mt-4">- Lic. Herbert René Cordero.</h4>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="swiper-slide bg-white shadow-lg rounded-lg p-14" style="text-align: center;">
+            <a href="docs/Yancy.pdf" target="_blank">
+              <img src="img/testimonioYancy.jpg" alt="" width="300" height="200" style="display: block; margin-left: auto; margin-right: auto;">
+            </a>
+            <p class="text-gray-600 italic">"Considero que Belén es una persona que estará siempre a la altura de sus compromisos
+              y responsabilidades"</p>
+            <h4 class="text-gray-800 font-semibold mt-4">- Lic. Yancy Ivett Coreas de Cruz.</h4>
+          </div>
+
+          <!-- Testimonio 4 -->
+          <div class="swiper-slide bg-white shadow-lg rounded-lg p-14" style="text-align: center;">
+            <a href="docs/Oscar.pdf" target="_blank">
+              <img src="img/testimonioOscar.jpg" alt="" width="300" height="200" style="display: block; margin-left: auto; margin-right: auto;">
+            </a>
+            <p class="text-gray-600 italic">"l la considero perseverante en su proceso educativo,
+              desarrolla las tareas en base a sus conocimientos."</p>
+            <h4 class="text-gray-800 font-semibold mt-4">- Lic. Oscar Roberto Torres Rodríguez.</h4>
+          </div>
+
+          <!-- Testimonio 5 -->
+          <div class="swiper-slide bg-white shadow-lg rounded-lg p-14" style="text-align: center;">
+            <a href="docs/Marvin.pdf" target="_blank">
+              <img src="img/testimonioMarvin.jpg" alt="" width="300" height="200" style="display: block; margin-left: auto; margin-right: auto;">
+            </a>
+            <p class="text-gray-600 italic">"Belén es una persona ha demostrado ser una persona responsable, con valores,
+              comprometida con sus tareas."</p>
+            <h4 class="text-gray-800 font-semibold mt-4">- Lic. Marvin Osmaro Parada.</h4>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-pink-50 py-12 pb-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Contáctame</h2>
+      <form action="https://formspree.io/f/your_form_id" method="POST" class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Nombre</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+        </div>
+        <button type="submit" href="docs/dv.pdf" class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-3 px-6 rounded-full hover:shadow-xl transition duration-300 transform hover:-translate-y-1 w-full">
+          <i class="fa-solid fa-paper-plane"></i> Enviar
+        </button>
+      </form>
+  
+      <!-- Redes sociales -->
+      <div class="flex justify-center mt-8 space-x-4">
+        <!-- <a href="https://facebook.com/tu-perfil" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/tu-perfil" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://instagram.com/tu-perfil" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+          <i class="fab fa-instagram"></i>
+        </a> -->
+        <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:abyrobles2129@gmail.com" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+50370502634" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://github.com/USIS026920/" target="_blank" class="text-pink-500 hover:text-pink-700 text-3xl">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Efecto de scroll suave
+        $('nav a').click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+            }, 500);
+        });
+
+        // Toggle detalles de proyectos
+        function toggleDetails(id) {
+            $('#' + id).slideToggle();
+        }
+    </script>
+
+    <!-- AOS for animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Lightbox2 for image galleries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<!-- Swiper for the carousel -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Isotope for filtering -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+<!-- jQuery for DOM manipulation -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  function openModal(id) {
+    document.getElementById(id).classList.add('active');
+  }
+
+  function closeModal(event, id) {
+    if (!event || event.target.id === id) {
+      document.getElementById(id).classList.remove('active');
+    }
+  }
+
+  // Inicialización de Swiper
+  document.querySelectorAll('.swiper').forEach(swiperElement => {
+    new Swiper(swiperElement, {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+
+</body>
+</html>
